@@ -1,7 +1,7 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 import { NextRequest, NextResponse } from 'next/server';
 
-async function getResponse(req: NextApiRequest) {
+export async function POST(req: NextApiRequest) {
     let buttonId = req.body.untrustedData.buttonIndex || 2
     // const searchParams = req.nextUrl.searchParams
     const id:any = req.query.id
@@ -48,8 +48,5 @@ async function getResponse(req: NextApiRequest) {
 
 }
 
-export async function POST(req: NextApiRequest): Promise<Response> {
-  return getResponse(req);
-}
 
 export const dynamic = 'force-dynamic';
