@@ -8,7 +8,7 @@ const frameMetadata = getFrameMetadata({
     }
   ],
   image: `${process.env.NEXT_PUBLIC_HOST}/dashboard.png`,
-  post_url: `${process.env.NEXT_PUBLIC_HOST}/api/frame`,
+  post_url: `${process.env.NEXT_PUBLIC_HOST}/api/frame?id=1`,
 });
 
 export const metadata: Metadata = {
