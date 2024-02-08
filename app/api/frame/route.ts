@@ -20,7 +20,9 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
     <title>This is frame ${idAsNumber}</title>
     <meta property="fc:frame" content="vNext" />
     <meta property="fc:frame:image" content="${process.env.NEXT_PUBLIC_HOST}/farcaster${idAsNumber}.jpg" />
-    <meta property="fc:frame:button:1" content="Next" />
+    <meta property="fc:frame:button:1" content="Back" />
+    <meta property="fc:frame:post_url" content="${process.env.NEXT_PUBLIC_HOST}/api/frame?id=${backid}" />
+    <meta property="fc:frame:button:2" content="Next" />
     <meta property="fc:frame:post_url" content="${process.env.NEXT_PUBLIC_HOST}/api/frame?id=${nextId}" />
   </head></html>`);
 
