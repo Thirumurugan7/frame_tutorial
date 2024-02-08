@@ -7,7 +7,7 @@ const frameMetadata = getFrameMetadata({
       label: "Begin"
     }
   ],
-  image: `${process.env.NEXT_PUBLIC_HOST}/farcaster2.png`,
+  image: `${process.env.NEXT_PUBLIC_HOST}/dashboard.png`,
   post_url: `${process.env.NEXT_PUBLIC_HOST}/api/frame`,
 });
 
