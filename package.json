@@ -10,7 +10,9 @@
   },
   "dependencies": {
     "@coinbase/onchainkit": "^0.5.2",
+    "farcaster": "^0.0.1",
     "next": "14.1.0",
+    "node-gyp": "^10.0.1",
     "react": "^18",
     "react-dom": "^18"
   },
